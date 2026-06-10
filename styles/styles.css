@@ -113,6 +113,6 @@ h1{
 
 /* you can change the style of a style using list-style*/
 ul{
-    list-style:none; /*would make bullet squares*/
+    list-style:none; /*would make bullet squares, code is square*/
     /*list-style:none;, would remove all bullets*/
 }
