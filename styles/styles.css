@@ -1,5 +1,15 @@
 body{
-    background-color:rgb(183, 223, 141);
+    background-color:rgb(25,25,25);
+    /*you can define colour using red,green blue- just like in photoshop*/
+    color:rgb(255, 247, 231);
+
+    /*(alomst) every element isnide the bod will inherit this text color, so you dont have to style every element separetelu*/
+    
+    /*to chage the font, use font-family - this is alos an inherited property*/
+
+
+/*when adding a font, provide a list as a fall-back, in case the user doesn't have a specific font*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* to target an id on the page, use # */
@@ -33,9 +43,43 @@ h3{
     /*first value top-bottom, second left-right*/
     margin:10px 0;
 }
+
+/*you can style multiple elements at the same time using a "," */
+h1, h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 /*!! every element inside html is a box, even if not made looked like a box... it is still a box*/
+
+/*since links have a default style in the browser, we need to style them directly to override the settings*/
+a{
+    color:rgb(146, 116, 186);
+    /*to remove the underline we use text-decoration*/
+    text-decoration:none;
+}
+
+/* to change the link in different "states," use pseudo-classes - like with the hover states*/
+a:hover{
+    color: blueviolet;
+}
+/*change the link when the user clicks(important for mobile) a:active*/
+a:active{
+    color:rgb(85, 52, 129)
+}
+/*there is also a visited state, if the user has been to the page before... but that one isn't used often*/
 
 footer{
     /*sometimes you do want space on one side of an element...*/
     padding-left:20px;
+    
+}
+
+/*using space means go inside the first element to look for the second... this example targets only p elements inside the footer*/
+footer p{
+    font-size:12px;
+}
+
+/*sometimes you want to style multiple elements the same way, but can't target based on tg name- 
+for this, you can use class to target a class, use a . before the name*/
+.larger{
+    font-size:24px;
 }
