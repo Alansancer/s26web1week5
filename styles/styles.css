@@ -1,5 +1,5 @@
 body{
-    background-color:burlywood;
+    background-color:rgb(183, 223, 141);
 }
 
 /* to target an id on the page, use # */
@@ -9,5 +9,33 @@ body{
     /* if you automatically apply an equal amount of space on both sides of an element,
     it will centre the element */
     margin: 0 auto;
-    width: 800px;
+    width: 850px;
+}
+
+/* the css box model goes: 
+margin: space between elements
+border
+padding: space between content and the edge of an element*/
+
+h3{
+    background-color:rgb(146, 116, 186); /*never forget your semicolon at the end of your line!!!!*/
+
+    /*when adding a boarder, you need three rules:
+    -color
+    -size
+    -type (ie. solid, dashed, dotted, etc)
+    */
+    border:aliceblue 5px dotted;
+    /* with padding, if you only give it one value, it applies the same amount of space to both sides*/
+    padding:5px;
+
+    /*with margin and padding, two values means applying to top-bottom and left-rigth*/
+    /*first value top-bottom, second left-right*/
+    margin:10px 0;
+}
+/*!! every element inside html is a box, even if not made looked like a box... it is still a box*/
+
+footer{
+    /*sometimes you do want space on one side of an element...*/
+    padding-left:20px;
 }
