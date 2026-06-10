@@ -110,3 +110,9 @@ specificity values
 h1{
     color:blue;
 }
+
+/* you can change the style of a style using list-style*/
+ul{
+    list-style:none; /*would make bullet squares*/
+    /*list-style:none;, would remove all bullets*/
+}
